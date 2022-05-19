@@ -1,0 +1,23 @@
+[
+  {
+    "app_name": "hide-collapse-test",
+    "app_id": "4977c80f-0f26-41c0-937a-b548a92cab87",
+    "ignore_first_request_roundtrip": true,
+    "notifications": {
+      "slack_channels": [
+        "hide-collapse-test-urgent"
+      ]
+    }
+  },
+  {
+    "app_name": "hide-collapse-test-Widget1",
+    "app_id": "4977c80f-0f26-41c0-937a-b548a92cab87",
+    "widget_id": "4977c80f-0f26-41c0-937a-b548a92cab87-ouq9u",
+    "ignore_first_request_roundtrip": true,
+    "notifications": {
+      "slack_channels": [
+        "hide-collapse-test-urgent"
+      ]
+    }
+  }
+]

@@ -1,0 +1,7 @@
+{
+  "appDefinitionId": "4977c80f-0f26-41c0-937a-b548a92cab87",
+  "appName": "hide collapse test",
+  "experiments": {
+    "centralized": true
+  }
+}

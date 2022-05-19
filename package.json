@@ -1,0 +1,65 @@
+{
+  "name": "@wix/hide-collapse-test",
+  "version": "1.0.0",
+  "license": "UNLICENSED",
+  "private": true,
+  "author": {
+    "name": "shiraya123",
+    "email": "shiraya@wix.com"
+  },
+  "scripts": {
+    "start": "yoshi-flow-editor start",
+    "build": "yoshi-flow-editor build",
+    "test": "npm run test:sled",
+    "test:sled": "sled-test-runner remote",
+    "test:sled:local": "sled-test-runner local",
+    "lint": "yoshi-flow-editor lint",
+    "posttest": "npm run lint"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,ts,tsx}": "yarn lint"
+  },
+  "devDependencies": {
+    "@types/jest": "^27.4.0",
+    "@wix/perfer-sled": "^1.0.272",
+    "@wix/perfer-viewer-utils": "^1.0.272",
+    "@wix/sled-test-runner": "^1.0.1250",
+    "@wix/thunderbolt-e2e-testkit": "^1.2281.1978",
+    "@wix/yoshi-flow-editor": "^6.0.0",
+    "husky": "~4.2.1",
+    "lint-staged": "^10.0.7",
+    "lodash": "^4.17.21",
+    "typescript": "~4.6.0",
+    "wix-ui-tpa": "^3.4.0"
+  },
+  "dependencies": {
+    "@wix/app-manifest-builder": "^2.14.0",
+    "@wix/bob-widget-services": "^2.30.0",
+    "@wix/platform-editor-sdk": "^1.2188.0",
+    "mobx": "^6.3.2",
+    "react": "^16.13.1"
+  },
+  "optionalDependencies": {
+    "fsevents": "^2.0.0"
+  },
+  "jest": {
+    "preset": "@wix/yoshi-flow-editor"
+  },
+  "wix": {
+    "artifact": {
+      "groupId": "com.wixpress",
+      "artifactId": "hide-collapse-test",
+      "targets": {
+        "static": true
+      }
+    }
+  },
+  "wallaby": {
+    "autoDetect": true
+  }
+}

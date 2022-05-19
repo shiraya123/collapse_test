@@ -1,0 +1,15 @@
+{
+  "extends": "@wix/yoshi-flow-editor/tsconfig.flow.json",
+  "include": [
+    "./__tests__/**/*",
+    "./src/**/*"
+  ],
+  "files": [
+    "target/generated/flow-types.ts",
+    "target/generated/blocks-types.ts"
+  ],
+  "compileOnSave": false,
+  "compilerOptions": {
+    "noImplicitAny": false
+  }
+}
